@@ -1,11 +1,16 @@
 variable "environment" {
-  description = "This is the tag used to desribe the environment"
+  description = "This is the tag used to describe the environment"
   default = "dev"
 }
 
 variable "tag" {
   description = "The base tag used to tag AWS resources"
-  default = "springboot"
+  default = "pretty-print"
+}
+
+variable "dockerImageUrl" {
+  description = "This is the docker image to deploy to your ECS cluster"
+  default = "chuckh/pretty-print"
 }
 
 variable "aws_region" {

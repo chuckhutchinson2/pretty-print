@@ -176,7 +176,7 @@ data "template_file" "task_definition" {
   template = "${file("${path.module}/task-definition.json")}"
 
   vars {
-    image_url        = "395319207868.dkr.ecr.us-east-1.amazonaws.com/docker/docker-examples:latest"
+    image_url        = "${var.dockerImageUrl}"
     container_name   = "${var.tag}-${var.environment}"
     log_group_region = "${var.aws_region}"
     log_group_name   = "${aws_cloudwatch_log_group.app.name}"
