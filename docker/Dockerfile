@@ -2,7 +2,7 @@ FROM chuckh/rhel7-jdk:latest
 
 WORKDIR /opt/
 
-ADD ../build/distributions/pretty-print.tar /opt/
+ADD dist/pretty-print.tar /opt/
 
 CMD /opt/pretty-print/bin/pretty-print
 

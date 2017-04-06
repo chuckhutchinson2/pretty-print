@@ -1,2 +1,5 @@
 # build the docker image
+mkdir -p dist
+cp ../build/distributions/pretty-print.tar dist
 docker build -t pretty-print .
+rm -fr dist
