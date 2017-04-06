@@ -255,7 +255,7 @@ EOF
 }
 
 resource "aws_iam_instance_profile" "app" {
-  name  = "tf-ecs-instprofile"
+  name  = "${var.tag}-${var.environment}-ecs-instprofile"
   # roles = ["${aws_iam_role.app_instance.name}"]
   roles = ["ecsInstanceRole"]
 }
