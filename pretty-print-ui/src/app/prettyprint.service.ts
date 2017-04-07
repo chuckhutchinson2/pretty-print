@@ -8,7 +8,7 @@ import { JsonText } from './jsontext';
 export class PrettyPrintService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
-  private prettyPrintUrl = 'http://localhost:8080/print/';
+  private prettyPrintUrl = 'http://pretty-print-dev-alb-ecs-172283331.us-east-1.elb.amazonaws.com/print';
 
   constructor(private http: Http) { }
 
