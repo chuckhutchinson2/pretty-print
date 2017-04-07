@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonText } from './jsontext';
+import { Response } from '@angular/http';
 import { PrettyPrintService } from './prettyprint.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class JsonFormComponent implements OnInit {
   constructor(private prettyPrintService: PrettyPrintService) { }
 
   prettyPrint(): void {
-      this.prettyPrintService.prettyPrint(this.model.jsontext).then(model => this.model = model);
+      this.prettyPrintService.prettyPrint(this.model.jsontext).
+        subscribe((res: Response) => this.model = new JsonText(res.text()), (err) => alert(err));
   }
 
   onSubmit() {
