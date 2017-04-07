@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Json Pretty Printer</h1>
+
+    <form (ngSubmit)="onSubmit()" #jsonForm="ngForm">
+      <div class="form-group">
+        <label for="jsonText">JSON</label>
+
+         <textarea class="form-control" rows=20 id="jsontext" [(ngModel)]="model.jsontext" name="jsontext"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Pretty Print</button>
+    </form>
+</div>
