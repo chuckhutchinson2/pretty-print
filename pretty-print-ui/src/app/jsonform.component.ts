@@ -1,15 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { JsonText } from './jsontext';
+import { PrettyPrintService } from './prettyprint.service';
 
 @Component({
   selector: 'json-form',
-  templateUrl: './jsonform.component.html'
+  templateUrl: './jsonform.component.html',
+  providers: [PrettyPrintService]
 })
-export class JsonFormComponent {
+export class JsonFormComponent implements OnInit {
 
-  model = new JsonText(1, '{ "abc" : "def" }');
+  model = new JsonText('');
 
-  submitted = false;
+  constructor(private prettyPrintService: PrettyPrintService) { }
 
-  onSubmit() { this.submitted = true; }
+  prettyPrint(): void {
+      this.prettyPrintService.prettyPrint(this.model.jsontext).then(model => this.model = model);
+  }
+
+  onSubmit() {
+    this.prettyPrint();
+  }
+
+  ngOnInit(): void {
+    return;
+  }
 }
