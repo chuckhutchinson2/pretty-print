@@ -13,6 +13,11 @@ variable "dockerImageUrl" {
   default = "chuckh/pretty-print"
 }
 
+variable "containerPort" {
+  description = "This is port for your docker container running on your ECS cluster"
+  default = "8080"
+}
+
 variable "aws_region" {
   description = "The AWS region to create things in."
   default     = "us-east-1"
