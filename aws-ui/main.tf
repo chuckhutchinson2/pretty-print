@@ -198,7 +198,7 @@ resource "aws_ecs_service" "test" {
   load_balancer {
     target_group_arn = "${aws_alb_target_group.alb_tg.id}"
     container_name   = "${var.tag}-${var.environment}"
-    container_port   = "8080"
+    container_port   = "${var.containerPort}"
   }
 
   depends_on = [
