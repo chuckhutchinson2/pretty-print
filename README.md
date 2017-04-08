@@ -1,6 +1,8 @@
 # pretty-print
 
-This is a sample groovy REST project to pretty print a JSON string.
+
+[JSON Pretty Print](http://pretty-print-ui-dev-alb-ecs-169084364.us-east-1.elb.amazonaws.com/) is a sample groovy REST project to pretty print a JSON string.
+
 
 The ui is written in Angular2.
 
