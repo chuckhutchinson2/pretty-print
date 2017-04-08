@@ -1,12 +1,9 @@
 # pretty-print
 
 
-[JSON Pretty Print](http://pretty-print-ui-dev-alb-ecs-169084364.us-east-1.elb.amazonaws.com/) is a sample groovy REST project to pretty print a JSON string.
+[JSON Pretty Print](http://pretty-print-ui-dev-alb-ecs-169084364.us-east-1.elb.amazonaws.com/) is a sample [groovy](http://groovy-lang.org/) [SpringBoot](https://spring.io/guides/gs/spring-boot/) REST project to pretty print a JSON string. The [ui](https://github.com/chuckhutchinson2/pretty-print/tree/master/pretty-print-ui) is written in [Angular2](https://angular.io/)
 
-
-The ui is written in Angular2.
-
-It also has the terraform scripts to build and deploy the service to an AWS ECS container.  
+It also has the [terraform](https://www.terraform.io/) scripts to build and deploy the service to an [AWS ECS container](https://github.com/chuckhutchinson2/pretty-print/tree/master/aws)
 
 The pretty print service is deployed on [Docker Hub](https://hub.docker.com/r/chuckh/pretty-print/).
 
