@@ -5,8 +5,9 @@
       <div class="form-group">
         <label for="jsonText">JSON</label>
 
-         <textarea class="form-control" rows=20 id="jsontext" [(ngModel)]="model.jsontext" name="jsontext"></textarea>
+         <textarea  class="form-control" rows=20 id="jsontext" [(ngModel)]="model.jsontext" name="jsontext"></textarea>
       </div>
       <button type="submit" class="btn btn-success">Pretty Print</button>
+      <cmp-copy [text]="[model.jsontext]" [cssClass]="'btn btn-primary'"></cmp-copy>
     </form>
 </div>

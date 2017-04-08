@@ -5,6 +5,7 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { JsonFormComponent } from './jsonform.component';
+import { CopyComponent } from './copy.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { JsonFormComponent } from './jsonform.component';
   ],
   declarations: [
     JsonFormComponent,
+    CopyComponent,
     AppComponent
   ],
   bootstrap: [ AppComponent ]
