@@ -1,4 +1,4 @@
-# pretty-print
+# [JSON Pretty Print](http://pretty-print-ui-dev-alb-ecs-169084364.us-east-1.elb.amazonaws.com/) 
 
 
 [JSON Pretty Print](http://pretty-print-ui-dev-alb-ecs-169084364.us-east-1.elb.amazonaws.com/) is a sample [groovy](http://groovy-lang.org/) , [SpringBoot](https://spring.io/guides/gs/spring-boot/) REST project to pretty print a JSON string. The REST service's container is stored on [Docker Hub](https://hub.docker.com/r/chuckh/pretty-print/). The base docker image is built and stored on [Docker Hub](https://hub.docker.com/r/chuckh/rhel7-jdk/) and is based on Red Hat Linux 7 with JDK 1.8.0_121 and can be found in my [docker-examples project](https://github.com/chuckhutchinson2/docker-examples/tree/master/rhel7-java). 
