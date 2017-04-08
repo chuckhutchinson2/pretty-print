@@ -1,0 +1,5 @@
+# build the docker image
+mkdir -p dist
+cp ../pretty-print-ui/dist/* dist/
+docker build -t chuckh/pretty-print-ui .
+rm -fr dist
