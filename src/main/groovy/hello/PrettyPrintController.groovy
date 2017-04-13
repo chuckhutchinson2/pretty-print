@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.CrossOrigin
 
 import groovy.json.JsonOutput
-import groovy.json.JsonSlurper
-import groovy.json.JsonParserType
 
 import org.slf4j.*
 import groovy.util.logging.Slf4j
@@ -22,6 +20,6 @@ public class PrettyPrintController {
 	public @ResponseBody String print(@RequestBody String data) {
 		log.info(data)
 		
-		return JsonOutput.prettyPrint(JsonOutput.toJson(new JsonSlurper().setType(JsonParserType.LAX).parseText(data)))
+		return JsonOutput.prettyPrint(data)
 	}
 }
